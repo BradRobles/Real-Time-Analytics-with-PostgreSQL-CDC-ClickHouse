@@ -1,0 +1,21 @@
+# Entornos virtuales
+venv/
+env/
+.env
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Volúmenes de bases de datos
+# (Aunque los pusimos en volúmenes Docker, es buena práctica ignorar directorios locales de BD si se mapean)
+postgres_data/
+clickhouse_data/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# PeerDB temporal
+peerdb-compose.yml
