@@ -21,7 +21,7 @@ except Exception as e:
     st.error(f"Waiting for ClickHouse... {e}")
     st.stop()
 
-st.title("Real-Time E-commerce Analytics (ClickHouse + PeerDB)")
+st.title("Real-Time E-commerce Analytics (PostgreSQL CDC + ClickHouse)")
 
 placeholder = st.empty()
 

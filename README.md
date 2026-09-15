@@ -15,8 +15,8 @@ No necesitas instalar Python, PostgreSQL ni ClickHouse localmente, ya que todo e
 
 1. **Clonar el repositorio**
    ```bash
-   git clone <URL_DE_TU_REPOSITORIO>
-   cd real-time-analytics
+   git clone https://github.com/BradRobles/Real-Time-Analytics-with-PostgreSQL-CDC-ClickHouse.git
+   cd Real-Time-Analytics-with-PostgreSQL-CDC-ClickHouse
    ```
 
 2. **Levantar los servicios con Docker Compose**
