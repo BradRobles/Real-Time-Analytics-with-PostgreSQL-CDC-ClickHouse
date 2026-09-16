@@ -10,9 +10,9 @@ GROUP BY p.name;
 -- ClickHouse
 EXPLAIN 
 SELECT p.name, sum(p.price) 
-FROM postgres_db.orders p_o 
-JOIN postgres_db.products p ON p_o.product_id = p.id 
-WHERE p_o.status = 'DELIVERED'
+FROM postgres_db.orders AS p_o FINAL
+JOIN postgres_db.products AS p FINAL ON p_o.product_id = p.id 
+WHERE p_o.status = 'DELIVERED' AND p_o._sign = 1 AND p._sign = 1
 GROUP BY p.name;
 
 -- Query 2: Daily order volume per user (top 10 active users)
